@@ -92,19 +92,20 @@
     -webkit-text-fill-color: transparent;
     animation: catch-light 2.2s cubic-bezier(.4,0,.2,1) 0.5s 1 both;
   }
-  .card .role {
+  .card .email {
     margin: 0;
-    margin-top: 3.0cqw;              /* 4.2 mm from name baseline to descriptor cap-top */
-    font-size: 9px;
-    font-size: 2.32cqw;              /* 1.99 mm */
+    margin-top: 3.4cqw;
+    font-size: 11px;                 /* fallback */
+    font-size: 3.3cqw;
     line-height: 1;
-    letter-spacing: 0.24em;
-    text-indent: 0.24em;
-    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-indent: 0.12em;             /* balance the trailing tracking */
     white-space: nowrap;
     color: var(--brass);
-    opacity: 0.92;
+    opacity: 0.88;
+    text-decoration: none;
   }
+  .card .email:hover, .card .email:focus-visible { opacity: 1; outline: none; }
   @keyframes catch-light {
     from { background-position: 100% 0; }
     to   { background-position: 0% 0; }
@@ -161,46 +162,6 @@
   }
   .btn.solid:hover { background: var(--brass-light); border-color: var(--brass-light); }
 
-  /* ---- professional profile ---- */
-  .profile {
-    border-top: 1px solid var(--brass-rim);
-    padding-top: 26px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .profile p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.55;
-    color: var(--ink);
-  }
-  .profile dl {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 92px 1fr;
-    column-gap: 16px;
-    row-gap: 14px;
-  }
-  .profile dt {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.45;
-    color: var(--muted);
-  }
-  .profile dd {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.45;
-    color: var(--ink);
-  }
-  .profile dd > div + div { margin-top: 8px; }
-  .profile dd .sub { color: var(--muted); }
-  @media (max-width: 340px) {
-    .profile dl { grid-template-columns: 1fr; row-gap: 6px; }
-    .profile dt { margin-top: 10px; }
-  }
-
   /* ---- details ---- */
   footer {
     display: flex;
@@ -224,6 +185,7 @@
 <main>
   <section class="card" aria-label="Mark Youssef — Founder, Nile Bridge Talent">
     <h1>Mark Youssef</h1>
+    <a class="email" href="mailto:markyoussef384@gmail.com">markyoussef384@gmail.com</a>
   </section>
 
   <div class="credential">
@@ -232,33 +194,10 @@
   </div>
 
   <nav class="actions" aria-label="Connect">
-    <a class="btn solid" href="mark-youssef.vcf" download="Mark Youssef.vcf">Save my contact</a>
-    <a class="btn" href="https://www.linkedin.com/in/mark-youssef-nyc">Connect on LinkedIn</a>
+    <a class="btn solid" href="mark-youssef.vcf" download="Mark Youssef.vcf">Contact Information</a>
+    <a class="btn" href="https://www.linkedin.com/in/mark-youssef-nyc">LinkedIn</a>
     <a class="btn" href="https://niletalentbridge.com">Nile Bridge Talent</a>
   </nav>
-
-  <section class="profile" aria-label="Professional profile">
-    <p>Mark Youssef is the founder of Nile Bridge Talent, which provides AI-powered phone operations for real
-       estate agents and brokerages. He earned an associate&rsquo;s and a bachelor&rsquo;s and completes his
-       master&rsquo;s in December 2026 &mdash; three degrees in just over three years of full-time study. He is
-       based in New York.</p>
-    <dl>
-      <dt>Education</dt>
-      <dd>
-        <div>M.A. Economics (candidate), finance concentration, with a Graduate Certificate in Forecasting
-          <span class="sub">&mdash; University at Albany, completing December 2026</span></div>
-        <div>B.S. Quantitative Economics &amp; Data Analysis
-          <span class="sub">&mdash; University at Albany, 2026, Dean&rsquo;s List</span></div>
-        <div>A.S. Business Administration
-          <span class="sub">&mdash; SUNY Orange, 2024, magna cum laude, Phi Theta Kappa</span></div>
-      </dd>
-      <dt>Leadership</dt>
-      <dd>Elected Student Body President and Student Trustee, SUNY Orange, 2024 &mdash; led the student
-          senate and negotiated the student activity budget with the Board of Trustees.</dd>
-      <dt>Languages</dt>
-      <dd>English, Arabic</dd>
-    </dl>
-  </section>
 
   <footer>
     <a href="mailto:mark@niletalentbridge.com">mark@niletalentbridge.com</a>
