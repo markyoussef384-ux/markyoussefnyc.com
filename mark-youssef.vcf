@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Youssef;Mark;;;
+FN:Mark Youssef
+ORG:Nile Bridge Talent
+TITLE:Founder
+TEL;TYPE=CELL,VOICE:+18454454456
+EMAIL;TYPE=INTERNET,PREF:mark@niletalentbridge.com
+URL:https://www.linkedin.com/in/mark-youssef-nyc
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/mark-youssef-nyc
+ADR;TYPE=WORK:;;;New York;NY;;United States
+NOTE:Founder, Nile Bridge Talent — AI-powered phone operations for real estate agents and brokerages. M.A. Economics Candidate, University at Albany (December 2026).
+END:VCARD
